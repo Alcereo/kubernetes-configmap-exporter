@@ -20,7 +20,8 @@ To each config map in cubernates set label with file export indifitier:
 - `some-file.json` - file in host to save data from file
 
 ```bash
-kubernetes-configmap-exporter -ns myproject -lb dist- -dir configs/ # Export all configs data to files in folder
+# Export all configs data to files in folder
+kubernetes-configmap-exporter -ns myproject -lb dist- -dir configs/
 ```
 
 To login in cluster uses `.kube/config` dir files. Can override with parameter `kubeconfig`
